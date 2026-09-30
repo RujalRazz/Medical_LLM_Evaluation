@@ -1,0 +1,181 @@
+# ==========================================================
+# Medical_LLM_evaluation
+# Python 3.13 / Jupyter notebook project (pandas, bert_score,
+# rouge_score, scikit-learn, matplotlib, seaborn)
+# ==========================================================
+
+
+# ------------------------------------------------------------
+# Jupyter / JupyterLab
+# ------------------------------------------------------------
+# Unanchored on purpose: this project has checkpoints nested
+# inside dataset/ and charts/ as well as at the repo root.
+.ipynb_checkpoints/
+.ipynb_checkpoints
+
+# Editor scratch dir that mimics the .ipynb extension
+.virtual_documents/
+
+# Anaconda Navigator / JupyterLab Projects UI state (sqlite db)
+anaconda_projects/
+*.db
+*.sqlite
+*.sqlite3
+
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Byte-compiled / optimized
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+
+# ------------------------------------------------------------
+# Dependencies & secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets*.yaml
+
+
+# ------------------------------------------------------------
+# Tool & test caches
+# ------------------------------------------------------------
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+
+
+# ------------------------------------------------------------
+# ML artifacts
+# ------------------------------------------------------------
+# Model weights are pulled into the user-level HF cache
+# (C:\Users\<you>\.cache\huggingface) — these guards are here so
+# nothing large lands in the repo if that ever changes.
+models/
+weights/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.msgpack
+*.tflite
+
+
+# ------------------------------------------------------------
+# Logs & temporary files
+# ------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.swp
+*.swo
+*~
+*.pid
+
+
+# ------------------------------------------------------------
+# Microsoft Office temp / lock files
+# ------------------------------------------------------------
+# e.g. ~$etrics.docx  (created while 5Metrics.docx is open)
+~$*
+.~lock.*#
+
+# Autorecover / backup
+*.autosave
+*.asd
+Backup*/
+
+
+# ------------------------------------------------------------
+# Windows
+# ------------------------------------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+System Volume Information/
+hiberfil.sys
+pagefile.sys
+swapfile.sys
+
+
+# ------------------------------------------------------------
+# macOS
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.AppleDouble
+.LSOverride
+Icon?
+.DocumentRevisions-V100
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+*.AppleDB
+*.com.apple.timemachine.donotpresent
+
+
+# ------------------------------------------------------------
+# Linux
+# ------------------------------------------------------------
+*~
+.directory
+.Trash-*
+.nfs*
+
+
+# ==========================================================
+# Explicitly COMMITTED (listed for clarity, not to be ignored):
+#   Medical_LLM_Evaluation.ipynb
+#   Metric_Inventory.csv
+#   Paper_Review.xlsx
+#   Error_analysis_table.xlsx
+#   5Metrics.docx
+#   Final_Report.pdf
+#   dataset/medical_qa.csv
+#   results/evaluation_results.csv
+#   charts/*.png
+# ==========================================================
